@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative; 
+}
+
+h1 {
+    color: crimson;
+    text-align: center;
+    margin: 50px 50px ;
+}
+
+.board{
+    border: 1px black solid;
+    background-color: darkgray;
+    width: 30%;
+    height: 20%;
+    float: left;
+    overflow: hidden;
+}
+.name{
+    width: 25%;
+    border: 1px solid black;
+    margin: 0 0 0 75%;
+    text-align: center;
+}
+#rabbit{
+    background-color: pink ;
+}
+#bird{
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+}
+#horse{
+    background-color: rgba(255, 255, 0, 0.486) ;
+}
+p {
+    padding: 0px 40px 10px 
+}
+
+@media screen and (min-width:991px) {
+   
+    #board_rabbit, #board_bird, #board_horse{
+        float: left;
+        margin-left: 30px;
+        height: 200px;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {    
+    #board_horse{
+        width:86%;
+        margin-left: 50px;
+        margin-top: 30px;
+        height: 150px;
+    }
+    #board_rabbit, #board_bird{
+        width: 40%;
+        float: left;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #board_horse, #board_rabbit, #board_bird{
+        width:60%;
+        margin-left: 120px;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+}
